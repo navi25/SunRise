@@ -1,7 +1,8 @@
-package io.navendra.sunrise
+package io.navendra.sunrise.ui.views
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import io.navendra.sunrise.R
 
 class MainActivity : AppCompatActivity() {
 
