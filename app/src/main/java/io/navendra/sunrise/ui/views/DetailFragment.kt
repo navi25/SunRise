@@ -13,6 +13,7 @@ class DetailFragment : BaseSunriseFragment(){
 
 
 
+
     override fun invalidate() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }

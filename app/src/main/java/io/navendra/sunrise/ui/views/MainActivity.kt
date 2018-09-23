@@ -4,14 +4,17 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Window
 import io.navendra.sunrise.R
+import io.navendra.sunrise.viewmodels.epoxy.WeatherDetailController
 
 class MainActivity : AppCompatActivity() {
 
+    private val controller by lazy {WeatherDetailController()}
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE)
-        setContentView(R.layout.activity_main)
-        window.setFeatureInt(Window.FEATURE_CUSTOM_TITLE, R.layout.titlebar)
+        setContentView(R.layout.fragment_weather_details)
+        controller.requestModelBuild()
     }
+
+
 }

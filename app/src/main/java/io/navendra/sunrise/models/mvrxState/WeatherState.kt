@@ -1,4 +1,4 @@
-package io.navendra.sunrise.state
+package io.navendra.sunrise.models.mvrxState
 
 import com.airbnb.mvrx.MvRxState
 import java.util.*
